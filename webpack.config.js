@@ -34,6 +34,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'index.html'),
       title: 'dev',
     }),
   ]
